@@ -93,10 +93,6 @@ img {
     letter-spacing: 0.04em;
     border-radius: 4px;
     cursor: pointer;
-
-    background: #4D5AE5;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
 }
 
 .logo {
@@ -254,14 +250,11 @@ img {
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
-
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
-
-
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero/people-office.jpg);
+    url(../images/hero/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -502,4 +495,51 @@ img {
 .portfolio-list-link:hover {
     border: 1px solid var(--color-cloud);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+/* modal */
+
+.backdrop {
+position: fixed;
+top: 0;
+left: 0;
+
+width: 100%;
+height: 100%;
+
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal {
+    position: absolute;
+    top: calc(50% - 225px);
+    left: calc(50% - 225px);
+
+    width: 450px;
+    min-height: 550px;
+    background-color: #F4F4FD;
+    border-radius: 12px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--accent-color-bg-cl);
+
+}
+
+.modal-icon {
+    fill: #2E2F42;
 }
