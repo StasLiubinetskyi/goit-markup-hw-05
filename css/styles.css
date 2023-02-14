@@ -436,7 +436,7 @@ img {
 
 .social-list-link {
     background-color: rgba(255, 255, 255, 0.1);
-    transition: fill var(--transition-dur-and-func);
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .social-list-link:hover,
