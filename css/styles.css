@@ -82,6 +82,7 @@ img {
     border-radius: 2px;
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 
 
@@ -220,6 +221,7 @@ img {
 .menu-link {
     color: var(--title-color);
     font-weight: 500;
+    transition: color var(--transition-dur-and-func);
 }
 
 .menu-link:hover,
@@ -241,7 +243,8 @@ img {
 .contacts-link {
     color: var(--primary-text-color);
     font-style: normal;
-}
+    transition: color var(--transition-dur-and-func);
+    }
 
 .contacts-link:hover,
 .contacts-link:focus {
@@ -278,7 +281,6 @@ img {
 
 .hero-btn {
     padding: 16px 32px;
-
     color: var(--white-color);
     background-color: var(--accent-color);
     border: none;
@@ -344,11 +346,13 @@ img {
 
 .team-social-list-link {
     background-color: var(--accent-color);
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .team-social-list-link:hover,
 .team-social-list-link:focus {
     background-color: var(--hover-color);
+    
 }
 
 /* customers */
@@ -458,7 +462,6 @@ img {
 
 .filter-btn {
     padding: 11px 23px;
-
     color: var(--accent-color);
     background-color: var(--color-cloud);
     border: 1px solid var(--color-cornflower);
@@ -540,12 +543,10 @@ img {
 position: fixed;
 top: 0;
 left: 0;
-
 width: 100%;
 height: 100%;
-
+z-index: 100;
 background-color: rgba(0, 0, 0, 0.4);
-
 transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
 }
 
